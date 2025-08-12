@@ -7,18 +7,18 @@ const Header = () => {
 
     <>
     <Container>
-       <div className='flex items-center py-4'>
+       <div className='flex  items-center py-4'>
         <div>
             <img src={Logo} alt="" />
         </div>
 
         <div className='mx-auto'>
             <ul className='flex gap-x-5  '>
-                <li className='text-#262626 font-Header text-[14px]'><a href="">Home</a></li>
-                <li className='text-#262626 font-Header text-[14px]'><a href="">Shop</a></li>
-                <li className='text-#262626 font-Header text-[14px]'><a href="">About</a></li>
-                <li className='text-#262626 font-Header text-[14px]'><a href="">Contacts</a></li>
-                <li className=' text-#262626 font-Header text-[14px]'><a href="">Journal</a></li>
+                <li className='  text-[#767676] font-Header text-[14px] transition-bold   hover:text-[#262626]'><a href="">Home</a></li>
+                <li className='  text-[#767676] font-Header text-[14px] transition-bold   hover:text-[#262626] '><a href="">Shop</a></li>
+                <li className='  text-[#767676] font-Header text-[14px] transition-bold   hover:text-[#262626] '><a href="">About</a></li>
+                <li className='  text-[#767676] font-Header text-[14px] transition-bold   hover:text-[#262626] '><a href="">Contacts</a></li>
+                <li className='  text-[#767676] font-Header text-[14px] transition-bold   hover:text-[#262626] '><a href="">Journal</a></li>
                 
                 
             </ul>
