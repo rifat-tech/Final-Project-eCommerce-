@@ -1,9 +1,17 @@
 
 import Header from '../component/Header'
+import Navbar from '../component/Navbar'
 
 const Home = () => {
   return (
+    <>
    <Header/>
+   <Navbar/>
+
+
+
+    </>
+  
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from './Container'
-import Logo from "../assets/Header-logo.png"
+import Logo from "../assets/Header-logo.png" //header logo image
 
 const Header = () => {
   return (
