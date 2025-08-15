@@ -3,14 +3,15 @@ import Container from './Container'
 import naviconlogo from "../assets/navbaricon.png"  //import image for the navigation icon
 import { FaSearch, FaShoppingCart, FaUserAlt } from "react-icons/fa";
 import { MdOutlineArrowDropDown } from 'react-icons/md';
-import { ImInfo } from 'react-icons/im';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 
 const Navbar = () => {
     let [category ,setcategory] = useState(false)
+    let [accountShow, setAccountShow] = useState(false)
     let categoryRef = useRef()
-    useState(() => {
+    let accountRef = useRef()
+    useEffect(() => {
         document.addEventListener('click', (e) => { 
             if (categoryRef.current.contains(e.target)){
                 setcategory(!category)
@@ -18,8 +19,22 @@ const Navbar = () => {
             else{
                 setcategory(false)
             }
+            if (accountRef.current.contains(e.target)){
+                setAccountShow(!accountShow)
+            }
+            else{
+                setAccount(false)
+            }
         })}
-,[category])
+,[category,accountShow]) //for Category click option
+
+//for Accunt click option
+
+
+
+
+
+
   return (
     <>
     {/* Navbar section use for Background Colour */}
@@ -76,12 +91,34 @@ const Navbar = () => {
     </div>
 
     {/* Here is the user icon and cart icon */}
-    <div className='w-1/4'>
-    <div className='flex items-center justify-end '>
-      <FaUserAlt className='mr-2' />
+    <div className='w-1/4 relative'>
+    <div className='flex  justify-end gap-5 '>
+
+{/* Account dropdown menu */}
+        <div className='flex items-center  ' ref={accountRef}>
+             <FaUserAlt className='mr-2' />
       <MdOutlineArrowDropDown className='mr-5'/>
+        </div>
+        {/* Dropdown menu for account options for hover*/}
+    {/* <div className='absolute top-[24%] right-[125px] translate-y-[-50%] font-Header   bg-white opacity-0 group-hover:opacity-100 transition-all duration-300  invisible ease-in-out group-hover:visible' ref={accountRef}>
+        <ul>
+            <li className='p-3 bg-white text-black hover:bg-black hover:text-white  '><a href="#">My Account</a></li>
+            <li className='p-3 bg-white text-black hover:bg-black hover:text-white ' ><a href="#">Log Out</a></li>
+        </ul>
+    </div> */}
+
+   
+
       <FaShoppingCart />
 </div>
+{ accountShow &&
+ <div className='w-[150px] absolute top-[45px] left-[100px]  font-Header   ' >
+        <ul>
+            <li className='p-3 bg-white text-black hover:bg-black hover:text-white text-center '><a href="#">My Account</a></li>
+            <li className='p-3 bg-white text-black hover:bg-black hover:text-white text-center' ><a href="#">Log Out</a></li>
+        </ul>
+    </div>
+}
     </div>
    </div>
 
