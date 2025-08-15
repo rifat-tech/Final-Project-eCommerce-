@@ -20,13 +20,13 @@ const Navbar = () => {
                 setcategory(false)
             }
             if (accountRef.current.contains(e.target)){
-                setAccountShow(!accountShow)
+                setAccountShow(prev => !prev)
             }
             else{
                 setAccountShow(false)
             }
         })}
-,[category,accountShow]) //for Category click option
+,[category]) //for Category click option
 
 //for Accunt click option
 
