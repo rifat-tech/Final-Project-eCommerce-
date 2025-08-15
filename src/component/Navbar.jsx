@@ -1,6 +1,7 @@
 
 import Container from './Container'
 import naviconlogo from "../assets/navbaricon.png"  //import image for the navigation icon
+import cardimage from"../assets/card.png" //import image for the card
 import { FaSearch, FaShoppingCart, FaUserAlt } from "react-icons/fa";
 import { MdOutlineArrowDropDown } from 'react-icons/md';
 import { useEffect, useRef, useState } from 'react';
@@ -9,8 +10,11 @@ import { useEffect, useRef, useState } from 'react';
 const Navbar = () => {
     let [category ,setcategory] = useState(false)
     let [accountShow, setAccountShow] = useState(false)
+    let [cardShow, setcardShow] = useState(false)
     let categoryRef = useRef()
     let accountRef = useRef()
+    let cardRef = useRef()
+
     useEffect(() => {
         document.addEventListener('click', (e) => { 
             if (categoryRef.current.contains(e.target)){
@@ -25,8 +29,14 @@ const Navbar = () => {
             else{
                 setAccountShow(false)
             }
+            if (cardRef.current.contains(e.target)){
+                setcardShow(!cardShow)
+            }
+            else{
+                setcardShow(false)
+            }
         })}
-,[category,accountShow]) //for Category click option
+,[category,accountShow,cardShow]) //for Category click option
 
 //for Accunt click option
 
@@ -108,8 +118,10 @@ const Navbar = () => {
     </div> */}
 
    
-
-      <FaShoppingCart />
+<div className='' ref={cardRef}>
+<FaShoppingCart />
+</div>
+      
 </div>
 { accountShow &&
  <div className='w-[150px] absolute top-[45px] left-[100px]  font-Header   ' >
@@ -117,6 +129,30 @@ const Navbar = () => {
             <li className='p-3 bg-white text-black hover:bg-black hover:text-white text-center '><a href="#">My Account</a></li>
             <li className='p-3 bg-white text-black hover:bg-black hover:text-white text-center' ><a href="#">Log Out</a></li>
         </ul>
+    </div>
+}
+{/* Cart dropdown menu */}
+{cardShow &&
+    <div className='absolute top-[45px] right-0 w-[300px] bg-white shadow-lg  ' >
+    <div className='flex bg-[#F5F5F3] p-4'>
+        <div className='w-[70px] bg-[#D8D8D8] ' >
+        <img src={cardimage} alt="" />
+        </div>
+        <div className='pl-5'>
+            <h2 className='text-[14px] font-Header text-[#262626] font-bold pt-2.5'>Black Smart Watch</h2>
+            <p className='text-[14px] text-[#767676] font-Header font-bold'> $100</p>
+        </div>
+    </div>
+    <div className='flex font-Header text-[14px] p-4 '>
+        <p className='text-[#767676] pr-1'>Subtotal:</p>
+        <h3 className='font-bold'> $44.00</h3>
+    </div>
+     <div  >
+        <ul className='w-full flex gap-3 p-4'>
+            <li className='w-2xl p-3 border-2 border-[#2B2B2B] bg-white text-black hover:bg-black hover:text-white text-center '><a href="#">View Cart</a></li>
+            <li className='w-2xl p-3 bg-white border-2 border-[#2B2B2B] text-black hover:bg-black hover:text-white text-center' ><a href="#">Checkout</a></li>
+        </ul>
+    </div>
     </div>
 }
     </div>
