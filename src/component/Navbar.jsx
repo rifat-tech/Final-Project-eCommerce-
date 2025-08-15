@@ -23,7 +23,7 @@ const Navbar = () => {
                 setAccountShow(!accountShow)
             }
             else{
-                setAccount(false)
+                setAccountShow(false)
             }
         })}
 ,[category,accountShow]) //for Category click option
