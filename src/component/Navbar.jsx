@@ -76,7 +76,7 @@ const Navbar = () => {
     //     </ul>
     // </div> */}
  {category &&
-      <div className='bg-black py-3 absolute top-[48px] left-0 w-[60%] '>
+      <div className='bg-black py-3 absolute top-[48px] left-0 w-[60%] z-[2] '>
         <ul>
             <li className='text-[14px] text-[rgba(255,255,255,0.71)] font-Header] pl-3 hover:text-white py-2'><a href="">Accesories</a></li>
             <li className='text-[14px] text-[rgba(255,255,255,0.71)] font-Header] pl-3 hover:text-white py-2'><a href="">Furniture</a></li>
@@ -124,7 +124,7 @@ const Navbar = () => {
       
 </div>
 { accountShow &&
- <div className='w-[150px] absolute top-[45px] left-[100px]  font-Header   ' >
+ <div className='w-[150px] absolute top-[45px] left-[100px]  font-Header z-[2]  ' >
         <ul>
             <li className='p-3 bg-white text-black hover:bg-black hover:text-white text-center '><a href="#">My Account</a></li>
             <li className='p-3 bg-white text-black hover:bg-black hover:text-white text-center' ><a href="#">Log Out</a></li>
@@ -133,7 +133,7 @@ const Navbar = () => {
 }
 {/* Cart dropdown menu */}
 {cardShow &&
-    <div className='absolute top-[45px] right-0 w-[300px] bg-white shadow-lg  ' >
+    <div className='absolute top-[45px] right-0 w-[300px] bg-white shadow-lg z-[2] ' >
     <div className='flex bg-[#F5F5F3] p-4'>
         <div className='w-[70px] bg-[#D8D8D8] ' >
         <img src={cardimage} alt="" />
