@@ -9,7 +9,8 @@ const Header = () => {
     <Container>
        <div className='flex  items-center py-4'>
         <div>
-            <img src={Logo} alt="" />
+            {/* <img src={Logo} alt="" /> */}
+            <h1 className='font-extrabold text-3xl'>GIG EXA</h1>
         </div>
 
         <div className='mx-auto'>
