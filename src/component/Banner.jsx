@@ -20,14 +20,16 @@ const Banner = () => {
           borderRadius: "10px",
           padding: "10px",
           position: "absolute",
-          top: "50%",
-          left: "10%",
+          top: "88%",
+          left: "0%",
           transform: "translateY(-50%)",
+         
+          
           
 
         }}
       >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
+        <ul style={{ margin: "0px", } }> {dots} </ul>
       </div>
     ),
     customPaging: i => (
@@ -36,8 +38,11 @@ const Banner = () => {
           width: "30px",
           color: "blue",
           borderRight: "3px white solid",
-          padding:"10px 0",
+          padding:"1px 0",
           color:"transparent",
+          height: "20px",
+          display: "flex",
+          justifyContent: "center",
           
           
         }}
@@ -50,7 +55,7 @@ const Banner = () => {
  
   
    <section className={"bg-[hsl(0,27%,98%)] border-1 border-[#FFFFFF] "}>
-    <Slider {...settings} >
+    <Slider {...settings} className="Banner_Slider" >
         <div>
            <img src={banner_img} alt="" /> 
         </div>

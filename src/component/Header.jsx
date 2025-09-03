@@ -6,8 +6,10 @@ const Header = () => {
   return (
 
     <>
-    <Container>
-       <div className='flex  items-center py-4'>
+    <section className='fixed top-0 left-0 w-full z-50 bg-white '>
+<Container>
+      
+         <div className='flex  items-center py-4 '>
         <div>
             {/* <img src={Logo} alt="" /> */}
             <h1 className='font-extrabold text-3xl'>GIG EXA</h1>
@@ -25,7 +27,12 @@ const Header = () => {
             </ul>
         </div>
        </div>
+    
+      
     </Container>
+
+    </section>
+    
       
     </>
     

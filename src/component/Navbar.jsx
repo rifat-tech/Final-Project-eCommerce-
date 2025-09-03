@@ -49,7 +49,7 @@ const Navbar = () => {
     <>
     {/* Navbar section use for Background Colour */}
     
-     <section className='bg-[#F5F5F3] py-4'>
+     <section className='bg-[#F5F5F3] py-4 pt-22'>
 <Container>
 
    <div className='flex items-center'>

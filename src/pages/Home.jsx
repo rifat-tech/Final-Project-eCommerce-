@@ -1,5 +1,6 @@
 
 import Banner from '../component/Banner'
+import Fotter from '../component/Fotter'
 import Header from '../component/Header'
 import Navbar from '../component/Navbar'
 import Newarrivals from '../component/Newarrivals'
@@ -13,6 +14,7 @@ const Home = () => {
    <Banner/>
    <Salepart/>
    <Newarrivals/>
+   <Fotter/>
 
 
 

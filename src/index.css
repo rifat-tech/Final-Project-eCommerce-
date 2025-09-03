@@ -11,3 +11,6 @@
   border-right: 3px solid #262626 !important;
   color: #262626 !important;
 }
+.Newarrivals-slider .slick-dots {
+  bottom: -45px !important; /* adjust until it looks right */
+}
