@@ -19,8 +19,8 @@ const Newarrivals = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 2000,
+    speed: 800,
+    autoplaySpeed: 1500,
     cssEase: "linear",
     
 

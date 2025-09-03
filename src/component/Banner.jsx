@@ -73,16 +73,16 @@ const Banner = () => {
         <div className="w-full flex py-4 justify-between items-center ">
             <div className="w-2/5 flex items-center gap-2">
             <img src={two} alt="" />
-            <p className="font-Header text-[#6D6D6D] text-[16px]">Two years warranty</p>
+            <p className="font-Header text-[#6D6D6D] text-[16px] hover:text-[#262626]">Two years warranty</p>
             </div>
             <div className="w-2/5 flex items-center gap-2">
             <FaTruckMoving />
-            <p className="font-Header text-[#6D6D6D] text-[16px]">Free shipping</p>
+            <p className="font-Header text-[#6D6D6D] text-[16px] hover:text-[#262626]">Free shipping</p>
 
             </div>
            <div className="w-1/5 flex items-center gap-2">
             <FaUndoAlt />
-            <p className="font-Header text-[#6D6D6D] text-[16px]">Free shipping</p>
+            <p className="font-Header text-[#6D6D6D] text-[16px] hover:text-[#262626]">Free shipping</p>
 
             </div>
            
