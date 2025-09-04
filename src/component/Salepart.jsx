@@ -1,8 +1,8 @@
 import React from 'react'
 import Container from './Container'
-import image_one from "../assets/Price_image_one.png"
-import image_two from "../assets/Price_image_two.png"
-import image_three from "../assets/Price_image_three.png"
+import image_one from "../assets/price_image_one.png"
+import image_two from "../assets/price_image_two.png"
+import image_three from "../assets/price_image_three.png"
 
 const Salepart = () => {
   return (

@@ -36,10 +36,9 @@ const Banner = () => {
       <div
         style={{
           width: "30px",
-          color: "blue",
           borderRight: "3px white solid",
           padding:"1px 0",
-          color:"transparent",
+          color:"transparent ",
           height: "20px",
           display: "flex",
           justifyContent: "center",
@@ -94,3 +93,6 @@ const Banner = () => {
 }
 
 export default Banner
+
+
+
