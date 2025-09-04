@@ -27,3 +27,5 @@ const Salepart = () => {
 }
 
 export default Salepart
+
+
