@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from './Container'
 import sales_one from "../assets/price_image_one.png"
-import sales_two from "../assets/price_image_two.png"
+import sales_two from "..assets/price_image_two.png"
 import sales_three from "../assets/price_image_three.png"
 
 const Salepart = () => {
