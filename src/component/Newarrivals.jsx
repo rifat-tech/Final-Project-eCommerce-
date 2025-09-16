@@ -6,6 +6,7 @@ import { MdLoop } from 'react-icons/md'
 import { useContext } from 'react'
 import { ApiData } from './Contextapi'
 import Slider from 'react-slick'
+import { Link } from 'react-router-dom'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -39,12 +40,11 @@ const Newarrivals = () => {
 <div className=' w-[24%] '>
           <div className='relative group '>
             <div className='max-w-full h-[300px] flex items-center justify-center overflow-hidden '>
-            <img 
-            src={item.thumbnail} 
-            alt={item.title} 
-  className="max-h-[200px] max-w-[300px] object-contain" 
-/>
-            
+          <Link to="/Product">
+  <img src={item.thumbnail} alt={item.title} className="max-h-[200px] max-w-[300px] object-contain" />hello
+</Link>
+
+   
             </div>
               
   {/* Hover Part*/}

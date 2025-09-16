@@ -41,7 +41,7 @@ const Banner = () => {
           color:"transparent ",
           height: "20px",
           display: "flex",
-          justifyContent: "center",
+          // justifyContent: "center",
           
           
         }}
@@ -53,7 +53,7 @@ const Banner = () => {
   return (
  
   
-   <section className={"bg-[hsl(0,27%,98%)] border-1 border-[#FFFFFF] "}>
+   <section id="banner"  className={"bg-[hsl(0,27%,98%)] border-1 border-[#FFFFFF] "}>
     <Slider {...settings} className="Banner_Slider" >
         <div>
            <img src={banner_img} alt="" /> 

@@ -52,8 +52,8 @@ const Fotter = () => {
                 <p className='font-dm font-Header text-[12px] text-[#6D6D6D] hover:text-[#262626] mt-1.5'>Aftabnagar, Dhaka, Bangladesh</p>
             </div>
             <div className='w-2/6 pl-8'>
-                <h1 className='text-3xl font-black'>GIG EXA</h1>
-                <div className=''><p className='pt-[170px] font-dm font-normal text-[14px] text-[#6D6D6D]'>2020 Orebi Minimal eCommerce Figma Template by Adveits</p></div>
+                <h1 className='text-3xl font-black hover:text-white hover:[-webkit-text-stroke:2px_red] '>GIG EXA</h1>
+                <div className=''><p className='pt-[170px] font-dm font-normal text-[14px] text-[#6D6D6D]'>2020 GIGEXA Minimal eCommerce Figma Template by Adveits</p></div>
             </div>
         </div>
     </Container>
